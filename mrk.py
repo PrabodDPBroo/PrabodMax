@@ -3,7 +3,7 @@ import urllib
 import sys
 import os
 
-os.system( clear )
+os.system('clear')
 
 bar = "\033[1;32;40m\n________________________________________________\n"
 
