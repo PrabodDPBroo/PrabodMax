@@ -57,10 +57,10 @@ try:
 
 
 except ImportError:
-    print( %s Requests isn\ t installed, installing now. )
-    os.system( pip3 install requests )
-    print( %s Requests has been installed. )
-    os.system( clear )
+    print('%s Requests isn\'t installed, installing now.')
+    os.system('pip3 install requests')
+    print('%s Requests has been installed.')
+    os.system('clear')
     import requests
 
 
@@ -79,11 +79,11 @@ def main():
         size = 0
         res = requests.get(url, headers=header)
         resp = str(res)
-        if resp ==  <Response [204]> :
+        if resp == '<Response [204]>':
             print(bar)
             print("\n\033[1;32;40m [+] No Data ... [+]")
             print(bar)  
-        elif resp ==  <Response [200]> :
+        elif resp == '<Response [200]>':
             print(bar)
             print("\n\033[1;32;40m [+] You Won Check Your Data Balance ... [+]")
             print(bar)
@@ -103,21 +103,20 @@ def main():
             time.sleep(0.5)
             sys.stdout.write("\033[F")
         
-    os.system( figlet FINISHED )
+    os.system('figlet FINISHED')
     again()
 
 
 def again():
-    again = input( \033[1;0;40m\nDo You want use again (y/n) -  )
+    again = input('\033[1;0;40m\nDo You want use again (y/n) - ')
     if again == "y" or again == "Y":
         main()
     elif again == "n" or again == "N":
         quit()
     else:
-        print( \033[1;31;40mEnter valid letter )
+        print('\033[1;31;40mEnter valid letter')
         again()
 
 
 if __name__ == "__main__":
-    main()                                                                                     
-                                                                                        
+    main()                                                                                                                                                                           
